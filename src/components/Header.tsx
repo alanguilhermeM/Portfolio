@@ -12,7 +12,7 @@ export class Header extends Component {
             <h2>Guilherme Mansur | Software Developer</h2>
             <nav className='nav_header'>
               <a href='/'>About Me</a>
-              <a href='/experience'>Experience</a>
+              {/* <a href='/experience'>Experience</a> */}
               <a href='/tecnologies'>Tecnologies</a>
               <a href='/projects'>Projects</a>
               <a href='/contact'>Contact</a>
