@@ -5,8 +5,6 @@
   display: flex;
   justify-content: space-around;
   align-items: center;
-  /* border-radius: 10px 10px 0 0; */
-  /* box-shadow: 0px 0px 4px 4px rgba(0, 0, 0, 1); */
 }
 
 .nav_header {
@@ -25,13 +23,97 @@
     color: #FFFFFF;
     display: flex;
     justify-content: space-between;
+    transition-property: font-size;
+    transition-duration: 0.2s;
+    transition-timing-function: linear;
   }
 }
 
 a:hover {
     border-bottom: 3px solid #F9B17A;
-//   text-decoration: underline;
-//   text-decoration-color: #F9B17A;
-//   text-decoration-style: double;
-  font-size: 110%;
+    font-size: 110%;
+}
+
+.about {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #2d3250;
+  
+  main {
+    width: 50%;
+    font-size: larger;
+  }
+}
+
+img {
+  width: 36.39%;
+}
+
+.tecnologies {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  background-color: #FFFFFF;
+  height: 888px;
+
+  .skill-card {
+    display: flex;
+    width: 700px;
+    border-left: 3px solid #F9B17A;
+    border-radius: 10px;
+    box-shadow: 0 0 20px #2d3250;
+    background-color: #2d3250; 
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    height: 300px;
+    padding: 5px;
+    margin: 5px;
+    align-content: center;
+  }
+}
+
+.img {
+  width: 100px;
+  height: 100px;
+  padding: 0 5px;
+}
+
+// .img:hover {
+//   height: 110px;
+//   border-left: 4px solid #F9B17A;
+// }
+
+.skill-title {
+  font-size: 30px;
+  position: absolute;
+  font-weight: 500;
+  color: #F9B17A;
+  text-align: center;
+  margin: 0;
+  padding: 0;
+}
+
+h4 {
+  text-align: center;
+  color: #F9B17A;
+}
+
+section {
+  transition-property: height, border-left, border;
+  transition-duration: 0.2s;
+  transition-timing-function: linear;
+}
+
+section:hover {
+  border: 1px solid black;
+  border-radius: 10px;
+  border-left: 3px solid #F9B17A;
+  border-bottom: 1px solid #F9B17A;
+  box-shadow: 0 0 50px 1px #F9B17A;
+  cursor: pointer;
+  // height: 130px;
+  // size: 1120%;
 }
