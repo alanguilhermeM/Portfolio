@@ -52,8 +52,68 @@ img {
 
 .tecnologies {
   display: flex;
-  justify-content: space-around;
+  flex-wrap: wrap;
+  justify-content: center;
+  flex-direction: column;
   align-items: center;
-  background-color: #676f9d;
+  background-color: #FFFFFF;
   height: 888px;
+
+  .skill-card {
+    display: flex;
+    width: 700px;
+    border-left: 3px solid #F9B17A;
+    border-radius: 10px;
+    box-shadow: 0 0 20px #2d3250;
+    background-color: #2d3250; 
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    height: 300px;
+    padding: 5px;
+    margin: 5px;
+    align-content: center;
+  }
+}
+
+.img {
+  width: 100px;
+  height: 100px;
+  padding: 0 5px;
+}
+
+// .img:hover {
+//   height: 110px;
+//   border-left: 4px solid #F9B17A;
+// }
+
+.skill-title {
+  font-size: 30px;
+  position: absolute;
+  font-weight: 500;
+  color: #F9B17A;
+  text-align: center;
+  margin: 0;
+  padding: 0;
+}
+
+h4 {
+  text-align: center;
+  color: #F9B17A;
+}
+
+section {
+  transition-property: height, border-left, border;
+  transition-duration: 0.2s;
+  transition-timing-function: linear;
+}
+
+section:hover {
+  border: 1px solid black;
+  border-radius: 10px;
+  border-left: 3px solid #F9B17A;
+  border-bottom: 1px solid #F9B17A;
+  box-shadow: 0 0 50px 1px #F9B17A;
+  cursor: pointer;
+  // height: 130px;
+  // size: 1120%;
 }
