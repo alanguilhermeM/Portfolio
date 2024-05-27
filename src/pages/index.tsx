@@ -1,10 +1,12 @@
 // import Image from "next/image";
+import Header from "@/components/Header";
 import React from "react";
 
 const Home: React.FC = () => {
   return (
     <main>
-      <h1>Qualquer Coisa</h1>
+      <Header />
+      {/* <h1>body</h1> */}
     </main>
   );
 }
