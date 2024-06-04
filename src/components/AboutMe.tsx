@@ -11,18 +11,18 @@ import VejaMais from "./button/VejaMais";
 
 const AboutMe: React.FC = () => {
   return (
-    <section className="h-screen flex justify-center items-center bg-[#121012]">
-      <div className="w-[70%] relative bottom-40 text-white">
-        <h1 className="font-jetbrains text-teal-400 my-3 flex font-bold w-full text-lg ">
+    <section className="min-h-screen flex justify-center items-center bg-gray-800 max-sm:flex-col max-sm:h-full">
+      <div className="w-[70%] relative bottom-40 text-white max-sm:top-10 max-sm:w-[95%] ">
+        <h1 className="font-jetbrains text-teal-400 my-3 flex font-bold w-full text-3xl ">
           Sobre
           <span className="grow m-3 border-b border-solid border-white opacity-50" />
         </h1>
-        <div className="flex">
+        <div className="flex max-sm:flex-col">
           <motion.div
-            initial={{ opacity: 0, x: 500 }}
+            initial={{ opacity: 0, x: 200 }}
             whileInView={{ opacity: 1, x: 0 }}
             transition={{ duration: 0.5 }}
-            className=" lg:w-1/2 p-5 text-lg lg:text-xl text-teal-200"
+            className="p-5 text-lg text-teal-200 max-sm:text-sm"
           >
             <p className=" mt-3 text-lg text-teal-100 font-bold">
               Formado pela Trybe como Full Stack, aprendi principais tecnologias
@@ -73,13 +73,13 @@ const AboutMe: React.FC = () => {
             </p>
           </motion.div>
         </div>
-        <div className="flex flex-wrap space-x-3 justify-center mt-20">
+        <div className="flex flex-wrap space-x-3 justify-center mt-20 max-sm:w-[100%]">
           {skills.map((skill, index: number) => (
             <motion.div
-              initial={{ opacity: 0, x: 300 }}
+              initial={{ opacity: 0, x: 50 }}
               whileInView={{ opacity: 1, x: 0 }}
               key={index}
-              className="w-[50px] aspect-square m-2"
+              className="w-[50px] aspect-square m-2 "
             >
               <Image alt={`${skill.name} logo`} src={skill.image} />
             </motion.div>
