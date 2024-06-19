@@ -7,7 +7,7 @@ import { AiFillLayout } from "react-icons/ai";
 import { MdMenuBook } from "react-icons/md";
 import { skills } from "@/data/skills";
 import Image from "next/image";
-import VejaMais from "./button/VejaMais";
+import VejaMais from "../button/VejaMais";
 
 const AboutMe: React.FC = () => {
   return (
