@@ -4,11 +4,34 @@ import { projects } from "@/data/projects";
 import { IProject } from "@/interfaces/project.interface";
 import Project from "../Project";
 import CustomLink from "../CustomLink";
+import { useRouter } from "next/router";
 
 const Projects = (): JSX.Element => {
   const sliceProject = projects.slice(0, 2);
+  const router = useRouter();
+  const currentPath = router.pathname;
 
-  return (
+  return currentPath === "/portfolio" ? (
+    <motion.section className="max-w-[1300px] m-auto relative md:px-10 px-5">
+      <div>
+        <h1 className="font-jetbrains text-teal-400 my-3 flex font-bold w-full text-3xl ">
+          Projetos
+          <span className="grow m-3 border-b border-solid border-white opacity-50" />
+        </h1>
+
+        <motion.div
+          initial={{ opacity: 0, x: 200 }}
+          whileInView={{ opacity: 1, x: 0 }}
+          transition={{ duration: 0.5 }}
+          className="flex flex-wrap justify-center"
+        >
+          {projects.map((project: IProject, index) => (
+            <Project project={project} key={index} delay={index} />
+          ))}
+        </motion.div>
+      </div>
+    </motion.section>
+  ) : (
     <motion.section className="max-w-[1300px] m-auto relative md:px-10 px-5">
       <div>
         <h1 className="font-jetbrains text-teal-400 my-3 flex font-bold w-full text-3xl ">

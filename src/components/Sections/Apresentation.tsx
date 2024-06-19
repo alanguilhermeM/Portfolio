@@ -24,6 +24,9 @@ const Apresentation: React.FC = () => {
       >
         <motion.div
           style={{ scale, position }}
+          initial={{ opacity: 0, x: 200 }}
+          whileInView={{ opacity: 1, x: 0 }}
+          transition={{ duration: 0.5 }}
           className="max-sm:w-[90%] md:w-[80%] justify-center flex flex-col h-[60vh] lg:text-center lg:items-center"
         >
           <div className="relative bottom-32 text-[#14b8a5]">

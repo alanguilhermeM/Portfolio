@@ -11,7 +11,7 @@ const Header: React.FC = () => {
   const currentPath = router.pathname;
 
   return (
-    <header className="flex w-full bg-gray-800 justify-center">
+    <header className="flex w-full bg-gray-800 top-0 z-40 justify-center sticky">
       <div className="flex flex-col w-[50%] p-5 text-[#FFFFFF] justify-center text-center">
         <h1 className="font-semibold md:text-2xl sm:text-lg max-[360px]:text-[12px] min-[360px]:text-[16px] xl:text-3xl">
           Guilherme Mansur
